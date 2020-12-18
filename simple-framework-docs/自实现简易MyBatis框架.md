@@ -1,11 +1,8 @@
-# 自实现MyBatis框架(CSDN)
+# 自实现MyBatis框架
 
 此框架实现了读取mapper.xml文件通过接口方法的代理 进行增删改查操作和直接调用Session的方法传入封装好数据的实体对象进行增删改操作的功能。框架的包名和类名大多和MyBatis下的文件采用相同的命名，框架的执行流程和使用方法和MyBatis类似，算是我前一篇所写的简易MyBatis框架的完善版本。前一篇文章中有对简易框架的执行流程分析，有需要可以参考下：
 [手写MyBatis框架——按执行流程编写](https://blog.csdn.net/weixin_44804750/article/details/105496683)
 
-源码已上传至GitHub，如果觉得有帮助的话随手点颗star呗，感谢各位！地址：[https://github.com/XuBin8866/simple_mybatis](https://github.com/XuBin8866/simple_mybatis)
-链接内的simplemybatis2即为此篇文章所讲的框架，simplemybatis1为上一篇所写的框架。
-@[TOC](自实现简易MyBatis框架)
 ## 一、框架介绍
 自实现的简易MyBatis框架，通过构建者读取配置文件完成对sqlSession工厂的创建，sqlSession类中提供所有的CRUD方法，而CRUD方法调用Executor类中的方法实现对数据库的操作，目前使用的数据库连接池为自定义连接池，目前还不支持由外部提供连接池。使用接口方法读取mapper.xml文件进行CRUD操作时会生成该接口的代理实现类，通过动态代理来调用sqlSession中的方法；也可以直接调用sqlSession的增删改方法，将需要传入的sql语句中的参数值封装到所操作表对应的实体类对象中，将该对象传入方法中，实现对数据库的操作。
 #### 1.目录结构
