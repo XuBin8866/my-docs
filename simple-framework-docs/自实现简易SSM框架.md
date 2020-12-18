@@ -1,10 +1,5 @@
 # 自实现简易SSM框架
 
-源码已上传至GitHub和码云，如果觉得有帮助的话随手点颗Star呗，感谢各位。
-
-GitHub：https://github.com/XuBin8866/simple-framework
-
-码云：https://gitee.com/AlwaysXu/simple-framework
 
 ## 一、框架介绍
 
@@ -38,7 +33,7 @@ GitHub：https://github.com/XuBin8866/simple-framework
 
 + 2.6 simple-mybatis
 
-  之前实现的简易MyBatis框架，地址：[自实现简易MyBatis框架](https://blog.csdn.net/weixin_44804750/article/details/105713236)
+  之前实现的简易MyBatis框架，地址：[自实现简易MyBatis框架](https://github.com/XuBin8866/my-docs/blob/main/simple-framework-docs/%E8%87%AA%E5%AE%9E%E7%8E%B0%E7%AE%80%E6%98%93MyBatis%E6%A1%86%E6%9E%B6.md)
 
 ## 二、详细分析
 
