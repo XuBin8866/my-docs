@@ -1,4 +1,4 @@
-# 自实现MyBatis框架(CSDN)
+# 自实现MyBatis框架
 
 此框架实现了读取mapper.xml文件通过接口方法的代理 进行增删改查操作和直接调用Session的方法传入封装好数据的实体对象进行增删改操作的功能。框架的包名和类名大多和MyBatis下的文件采用相同的命名，框架的执行流程和使用方法和MyBatis类似，算是我前一篇所写的简易MyBatis框架的完善版本。前一篇文章中有对简易框架的执行流程分析，有需要可以参考下：
 [手写MyBatis框架——按执行流程编写](https://blog.csdn.net/weixin_44804750/article/details/105496683)
